@@ -1,0 +1,70 @@
+body {
+  background-color: #E3F6FD;
+}
+#Goban {
+position:relative;
+overflow: visible;
+/*left:0px;
+right:0px;*/
+min-width:570px;
+min-height:570px;
+/*margin:auto;*/
+float:left;
+}
+canvas {position:absolute;
+left:0px;
+right:0px;}
+#board {z-index: 1}
+#stones {z-index: 2}
+#cursor {z-index: 3}
+#textalert {z-index: 4}
+#overlay {z-index: 5}
+
+#board{
+  /*position:absolute;*/
+  display:block;
+  min-height:570px;
+  min-width:570px;
+  background-image: url("ice.jpg");
+  background-size: cover;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.gobanbuttons{
+  /*position:absolute;*/
+  clear:both;
+  width:100%;
+  height:100px;
+  display:block;
+}
+
+.gobanbutton{
+  border-radius: 2px;
+  background-color: #547980;
+  border:round;
+  border-style: solid;
+  border-color: black;
+  color:white;
+  padding: 10px;
+  margin:5px;
+  cursor:pointer;
+  font-style:Helvetica;
+  width:40px;
+  display:inline-block;
+}
+
+
+.gobanbuttonactive{
+  background-color: #E3F6FD;
+  color:black;
+  border-radius: 2px;
+  border:round;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+  margin:5px;
+  cursor:pointer;
+  font-style:Helvetica;
+  width:40px;
+  display: inline-block;
+}

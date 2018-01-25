@@ -1,0 +1,58 @@
+.navWindow{
+  background-color: #547980;
+  position:absolute;
+  min-width: 100%;
+  min-height: 100%;
+  flex-grow: 1;
+  border:1px;
+  z-index:10;
+  color: white;
+}
+
+.menubuttoninside {
+  height:50px;
+}
+#navbutton{
+  margin-left: auto;
+}
+#usermenubutton{
+  margin-right: auto;
+}
+
+#insidebutton {
+  float: right;
+}
+#menubuttonoutside {
+  /*margin-bottom: auto;
+  margin-left: auto;*/
+  display:flex;
+  width:100%;
+}
+
+.menucontents{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.problemButton{
+  display:block;
+  width:46px;
+  height:46px;
+  margin:2px;
+  border: 2px;
+  border-color: #E3F6FD;
+  border-style: solid;
+  color:white;
+}
+
+.problemButton.selected {
+  opacity:0.6;
+}
+
+.problemButton.solved {
+  width:50px;
+  height:50px;
+  border:0;
+  background-color: #E3F6FD;
+  color:black;
+}

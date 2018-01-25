@@ -1,0 +1,174 @@
+.main{
+  position:relative;
+  height:100%;
+  width:100%;
+}
+
+textarea{
+  resize: none;
+  min-height: 50px;
+  min-width:406px;
+}
+
+#buttons {width:50%;
+/*flex:1;*/
+/*margin:0;*/
+/*float:left;*/
+/*clear:right;*/
+/*position: absolute;*/
+/*background-color: #547980;}*/
+}
+/*#Wrapper{
+  position:relative;
+  width:600px;
+  height: 600px;
+  margin:auto;
+}*/
+#wrapper{
+  margin:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #547980;
+  align-items: center;
+}
+
+/*#547980 */
+#prisoners{
+  /*position: absolute;
+  flex:1;*/
+  /*float:right;*/
+  width:25%;
+  /*margin:0;*/
+  text-align: right;
+  font-style:Helvetica;
+  font-size: 20px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  /*clear:right;*/
+  /*background-color: #547980;*/
+}
+#gameinfo{
+width:inherit;
+margin:auto;
+clear:both;
+display:flex;
+}
+
+#gametree{
+  /*position:absolute;*/
+  background:gray;
+  z-index:10;
+  /*padding:5px*/
+}
+
+#gametreecontainer{
+  position:absolute;
+  /*max-width: 420px;*/
+  overflow:scroll;
+  direction:rtl;
+  width:406px;
+  height:226px;
+  margin-bottom: -50px;
+  padding:0;
+  background-color: #E3F6FD;
+  /*margin:auto;
+  padding:0;*/
+  /*float:right;*/
+}
+#gametreebox{
+  width:406px;
+  height:226px;
+  border-style:solid;
+  border-color:black;
+  border:round;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#right{
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right:50px;
+  /*justify-content: space-around;*/
+  float:right;
+  height:600px;
+  width:420px;
+}
+
+#tools{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  /*margin-top:20px;*/
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+
+/* scrollbar stuff*/
+::-webkit-scrollbar {
+    width: 6px;
+    height:6px;
+    background-color: #F5F5F5;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /*background: rgba(255,0,0,0.8);*/
+    background: gray;
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
+}
+
+#buttons{
+  flex-grow: 2;
+}
+.buttons{
+  border-radius: 2px;
+  background-color: #E3F6FD;
+  border:round;
+  border-style: solid;
+  border-color: black;
+  color:black;
+  padding: 10px;
+  margin:5px;
+  cursor:pointer;
+  font-style:Helvetica;
+}
+
+.rightarrow{
+  background:none;
+  width:0;
+  height:0;
+  border-top: 30px solid transparent;
+  border-left: 60px solid #E3F6FD;
+  border-bottom: 30px solid transparent;
+  border-right: 0px;
+  float: right;
+}
+
+.leftarrow{
+  background:none;
+  width:0;
+  height:0;
+  border-top: 30px solid transparent;
+  border-right: 60px solid #E3F6FD;
+  border-bottom: 30px solid transparent;
+  border-left: 0px;
+  float:left;
+}
+
+textarea{
+  font-family: Helvetica;
+}
